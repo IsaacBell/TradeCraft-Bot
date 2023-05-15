@@ -1,0 +1,215 @@
+isaac@DESKTOP-OCPTU3F:~/TradeCraft-Bot$ docker compose run --rm freqtrade download-data --pairs BCH/EUR BTC/EUR DAI/EUR DASH/EUR ETC/EUR ETH/EUR LINK/EUR --exchange kraken --days 5 -t 5m
+2023-05-15 21:21:13,630 - freqtrade - INFO - freqtrade 2023.4
+2023-05-15 21:21:13,631 - freqtrade.configuration.load_config - INFO - Using config: user_data/config.json ...
+2023-05-15 21:21:13,632 - freqtrade.loggers - INFO - Verbosity set to 0
+2023-05-15 21:21:13,633 - freqtrade.configuration.configuration - INFO - Using exchange kraken
+2023-05-15 21:21:13,656 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2023-05-15 21:21:13,656 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2023-05-15 21:21:13,657 - freqtrade.configuration.configuration - INFO - Using pairs ['BCH/EUR', 'BTC/EUR', 'DAI/EUR', 'DASH/EUR', 'ETC/EUR', 'ETH/EUR', 'LINK/EUR']
+2023-05-15 21:21:13,657 - freqtrade.configuration.configuration - INFO - timeframes --timeframes: ['5m']
+2023-05-15 21:21:13,657 - freqtrade.configuration.configuration - INFO - Detected --days: 5
+2023-05-15 21:21:13,659 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2023-05-15 21:21:13,671 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2023-05-15 21:21:13,672 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+
+2023-05-15 21:21:13,694 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2023-05-15 21:21:13,694 - freqtrade.exchange.exchange - INFO - Using CCXT 3.0.75
+2023-05-15 21:21:13,695 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2023-05-15 21:21:13,706 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 1000}
+2023-05-15 21:21:13,712 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2023-05-15 21:21:13,712 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Kraken'...
+2023-05-15 21:21:13,712 - freqtrade.exchange.exchange - INFO - Markets were not loaded. Loading them now..
+2023-05-15 21:21:16,527 - freqtrade.commands.data_commands - INFO - About to download pairs: ['BCH/EUR', 'BTC/EUR', 'DAI/EUR', 'DASH/EUR', 'ETC/EUR', 'ETH/EUR', 'LINK/EUR'], intervals: ['5m'] to /freqtrade/user_data/data/kraken
+2023-05-15 21:21:16,534 - freqtrade.data.history.history_utils - INFO - Downloading trades for pair BCH/EUR.
+2023-05-15 21:21:16,552 - freqtrade.data.history.history_utils - INFO - Start earlier than available data. Redownloading trades for BCH/EUR...
+2023-05-15 21:21:16,554 - freqtrade.data.history.history_utils - INFO - Current Amount of trades: 0
+2023-05-15 21:21:22,597 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/data/kraken/BCH_EUR-trades.json.gz"
+2023-05-15 21:21:22,711 - freqtrade.data.history.history_utils - INFO - New Amount of trades: 3841
+2023-05-15 21:21:22,712 - freqtrade.data.history.history_utils - INFO - Downloading trades for pair BTC/EUR.
+2023-05-15 21:21:23,395 - freqtrade.data.history.history_utils - INFO - Start earlier than available data. Redownloading trades for BTC/EUR...
+2023-05-15 21:21:23,446 - freqtrade.data.history.history_utils - INFO - Current Amount of trades: 0
+2023-05-15 21:24:44,320 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/data/kraken/BTC_EUR-trades.json.gz"
+2023-05-15 21:24:47,629 - freqtrade.data.history.history_utils - INFO - New Amount of trades: 161500
+2023-05-15 21:24:47,672 - freqtrade.data.history.history_utils - INFO - Downloading trades for pair DAI/EUR.
+2023-05-15 21:24:47,699 - freqtrade.data.history.history_utils - INFO - Start earlier than available data. Redownloading trades for DAI/EUR...
+2023-05-15 21:24:47,704 - freqtrade.data.history.history_utils - INFO - Current Amount of trades: 0
+2023-05-15 21:25:01,720 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/data/kraken/DAI_EUR-trades.json.gz"
+2023-05-15 21:25:01,954 - freqtrade.data.history.history_utils - INFO - New Amount of trades: 9149
+2023-05-15 21:25:01,958 - freqtrade.data.history.history_utils - INFO - Downloading trades for pair DASH/EUR.
+2023-05-15 21:25:01,969 - freqtrade.data.history.history_utils - INFO - Start earlier than available data. Redownloading trades for DASH/EUR...
+2023-05-15 21:25:01,971 - freqtrade.data.history.history_utils - INFO - Current Amount of trades: 0
+2023-05-15 21:25:05,579 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/data/kraken/DASH_EUR-trades.json.gz"
+2023-05-15 21:25:05,618 - freqtrade.data.history.history_utils - INFO - New Amount of trades: 1242
+2023-05-15 21:25:05,619 - freqtrade.data.history.history_utils - INFO - Downloading trades for pair ETC/EUR.
+2023-05-15 21:25:05,624 - freqtrade.data.history.history_utils - INFO - Start earlier than available data. Redownloading trades for ETC/EUR...
+2023-05-15 21:25:05,624 - freqtrade.data.history.history_utils - INFO - Current Amount of trades: 0
+2023-05-15 21:25:07,952 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/data/kraken/ETC_EUR-trades.json.gz"
+2023-05-15 21:25:07,976 - freqtrade.data.history.history_utils - INFO - New Amount of trades: 585
+2023-05-15 21:25:07,977 - freqtrade.data.history.history_utils - INFO - Downloading trades for pair ETH/EUR.
+2023-05-15 21:25:08,234 - freqtrade.data.history.history_utils - INFO - Start earlier than available data. Redownloading trades for ETH/EUR...
+2023-05-15 21:25:08,254 - freqtrade.data.history.history_utils - INFO - Current Amount of trades: 0
+2023-05-15 21:26:14,914 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/data/kraken/ETH_EUR-trades.json.gz"
+2023-05-15 21:26:15,935 - freqtrade.data.history.history_utils - INFO - New Amount of trades: 51003
+2023-05-15 21:26:15,962 - freqtrade.data.history.history_utils - INFO - Downloading trades for pair LINK/EUR.
+2023-05-15 21:26:15,983 - freqtrade.data.history.history_utils - INFO - Start earlier than available data. Redownloading trades for LINK/EUR...
+2023-05-15 21:26:15,988 - freqtrade.data.history.history_utils - INFO - Current Amount of trades: 0
+2023-05-15 21:26:22,019 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/data/kraken/LINK_EUR-trades.json.gz"
+2023-05-15 21:26:22,115 - freqtrade.data.history.history_utils - INFO - New Amount of trades: 3139
+isaac@DESKTOP-OCPTU3F:~/TradeCraft-Bot$ docker compose run --rm freqtrade backtesting --config user_data/config.json --strategy SampleStrategy --timerange $(date -d "-2 days" +"%Y%m%d")-$(date +"%Y%m%d") -i 5m
+
+2023-05-15 21:32:18,254 - freqtrade - INFO - freqtrade 2023.4
+2023-05-15 21:32:18,284 - freqtrade.configuration.load_config - INFO - Using config: user_data/config.json ...
+2023-05-15 21:32:18,286 - freqtrade.loggers - INFO - Verbosity set to 0
+2023-05-15 21:32:18,287 - freqtrade.configuration.configuration - INFO - Parameter -i/--timeframe detected ... Using timeframe: 5m ...
+2023-05-15 21:32:18,287 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 5 ...
+2023-05-15 21:32:18,287 - freqtrade.configuration.configuration - INFO - Parameter --timerange detected: 20230513-20230515 ...
+2023-05-15 21:32:18,323 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2023-05-15 21:32:18,323 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2023-05-15 21:32:18,324 - freqtrade.configuration.configuration - INFO - Overriding timeframe with Command line argument
+2023-05-15 21:32:18,324 - freqtrade.configuration.configuration - INFO - Parameter --cache=day detected ...
+2023-05-15 21:32:18,324 - freqtrade.configuration.configuration - INFO - Filter trades by timerange: 20230513-20230515
+2023-05-15 21:32:18,326 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2023-05-15 21:32:18,336 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2023-05-15 21:32:18,336 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2023-05-15 21:32:18,336 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2023-05-15 21:32:18,352 - freqtrade.commands.optimize_commands - INFO - Starting freqtrade in Backtesting mode
+2023-05-15 21:32:18,353 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2023-05-15 21:32:18,353 - freqtrade.exchange.exchange - INFO - Using CCXT 3.0.75
+2023-05-15 21:32:18,354 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2023-05-15 21:32:18,367 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 1000}
+2023-05-15 21:32:18,373 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2023-05-15 21:32:21,444 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Kraken'...
+2023-05-15 21:32:21,491 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2023-05-15 21:32:21,492 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2023-05-15 21:32:21,493 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2023-05-15 21:32:21,493 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: EUR.
+2023-05-15 21:32:21,493 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 990.
+2023-05-15 21:32:21,493 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2023-05-15 21:32:21,494 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 5.
+2023-05-15 21:32:21,494 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2023-05-15 21:32:21,495 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2023-05-15 21:32:21,495 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2023-05-15 21:32:21,496 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2023-05-15 21:32:21,496 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2023-05-15 21:32:21,499 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2023-05-15 21:32:21,501 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2023-05-15 21:32:21,501 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2023-05-15 21:32:21,502 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2023-05-15 21:32:21,502 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2023-05-15 21:32:21,502 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: EUR
+2023-05-15 21:32:21,502 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 990
+2023-05-15 21:32:21,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2023-05-15 21:32:21,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2023-05-15 21:32:21,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2023-05-15 21:32:21,504 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2023-05-15 21:32:21,504 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2023-05-15 21:32:21,504 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2023-05-15 21:32:21,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2023-05-15 21:32:21,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2023-05-15 21:32:21,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2023-05-15 21:32:21,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2023-05-15 21:32:21,506 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2023-05-15 21:32:21,506 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 5
+2023-05-15 21:32:21,506 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2023-05-15 21:32:21,525 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2023-05-15 21:32:21,551 - freqtrade.data.history.history_utils - INFO - Using indicator startup period: 30 ...
+2023-05-15 21:32:21,606 - freqtrade.data.converter - INFO - Missing data fillup for BCH/EUR: before: 283 - after: 607 - 114.49%
+2023-05-15 21:32:21,715 - freqtrade.data.converter - INFO - Missing data fillup for DAI/EUR: before: 373 - after: 607 - 62.73%
+2023-05-15 21:32:21,751 - freqtrade.data.converter - INFO - Missing data fillup for DASH/EUR: before: 137 - after: 604 - 340.88%
+2023-05-15 21:32:21,758 - freqtrade.data.history.idatahandler - WARNING - No history for EOS/EUR, spot, 5m found. Use `freqtrade download-data` to download the data
+2023-05-15 21:32:21,790 - freqtrade.data.converter - INFO - Missing data fillup for ETC/EUR: before: 71 - after: 588 - 728.17%
+2023-05-15 21:32:21,887 - freqtrade.data.converter - INFO - Missing data fillup for LINK/EUR: before: 232 - after: 607 - 161.64%
+2023-05-15 21:32:21,892 - freqtrade.optimize.backtesting - INFO - Loading data from 2023-05-12 21:30:00 up to 2023-05-15 00:00:00 (2 days).
+2023-05-15 21:32:21,893 - freqtrade.optimize.backtesting - INFO - Dataload complete. Calculating indicators
+2023-05-15 21:32:21,896 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy SampleStrategy
+2023-05-15 21:32:21,897 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2023-05-15 21:32:21,900 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2023-05-15 21:32:21,901 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): exit_short_rsi = 30
+2023-05-15 21:32:21,901 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2023-05-15 21:32:21,902 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2023-05-15 21:32:21,902 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): short_rsi = 70
+2023-05-15 21:32:21,902 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2023-05-15 21:32:22,051 - freqtrade.optimize.backtesting - INFO - Backtesting with data from 2023-05-13 00:00:00 up to 2023-05-15 00:00:00 (2 days).
+2023-05-15 21:32:22,957 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/backtest_results/backtest-result-2023-05-15_21-32-22.meta.json"
+2023-05-15 21:32:22,958 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/backtest_results/backtest-result-2023-05-15_21-32-22.json"
+2023-05-15 21:32:22,963 - freqtrade.misc - INFO - dumping json to "/freqtrade/user_data/backtest_results/.last_result.json"
+Result for strategy SampleStrategy
+=========================================================== BACKTESTING REPORT ===========================================================
+|     Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit EUR |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|----------+-----------+----------------+----------------+------------------+----------------+-----------------+-------------------------|
+|  BCH/EUR |         0 |           0.00 |           0.00 |            0.000 |           0.00 |            0:00 |     0     0     0     0 |
+|  BTC/EUR |         0 |           0.00 |           0.00 |            0.000 |           0.00 |            0:00 |     0     0     0     0 |
+|  DAI/EUR |         0 |           0.00 |           0.00 |            0.000 |           0.00 |            0:00 |     0     0     0     0 |
+| DASH/EUR |         0 |           0.00 |           0.00 |            0.000 |           0.00 |            0:00 |     0     0     0     0 |
+|  ETC/EUR |         0 |           0.00 |           0.00 |            0.000 |           0.00 |            0:00 |     0     0     0     0 |
+|  ETH/EUR |         0 |           0.00 |           0.00 |            0.000 |           0.00 |            0:00 |     0     0     0     0 |
+| LINK/EUR |         1 |          -0.96 |          -0.96 |           -9.491 |          -0.95 | 1 day, 23:05:00 |     0     0     1     0 |
+|    TOTAL |         1 |          -0.96 |          -0.96 |           -9.491 |          -0.95 | 1 day, 23:05:00 |     0     0     1     0 |
+======================================================== LEFT OPEN TRADES REPORT =========================================================
+|     Pair |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit EUR |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|----------+-----------+----------------+----------------+------------------+----------------+-----------------+-------------------------|
+| LINK/EUR |         1 |          -0.96 |          -0.96 |           -9.491 |          -0.95 | 1 day, 23:05:00 |     0     0     1     0 |
+|    TOTAL |         1 |          -0.96 |          -0.96 |           -9.491 |          -0.95 | 1 day, 23:05:00 |     0     0     1     0 |
+=========================================================== ENTER TAG STATS ===========================================================
+|   TAG |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit EUR |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |
+|-------+-----------+----------------+----------------+------------------+----------------+-----------------+-------------------------|
+| TOTAL |         1 |          -0.96 |          -0.96 |           -9.491 |          -0.95 | 1 day, 23:05:00 |     0     0     1     0 |
+==================================================== EXIT REASON STATS =====================================================
+|   Exit Reason |   Exits |   Win  Draws  Loss  Win% |   Avg Profit % |   Cum Profit % |   Tot Profit EUR |   Tot Profit % |
+|---------------+---------+--------------------------+----------------+----------------+------------------+----------------|
+|    force_exit |       1 |      0     0     1     0 |          -0.96 |          -0.96 |           -9.491 |          -0.19 |
+===================== SUMMARY METRICS =====================
+| Metric                      | Value                     |
+|-----------------------------+---------------------------|
+| Backtesting from            | 2023-05-13 00:00:00       |
+| Backtesting to              | 2023-05-15 00:00:00       |
+| Max open trades             | 5                         |
+|                             |                           |
+| Total/Daily Avg Trades      | 1 / 0.5                   |
+| Starting balance            | 1000 EUR                  |
+| Final balance               | 990.509 EUR               |
+| Absolute profit             | -9.491 EUR                |
+| Total profit %              | -0.95%                    |
+| CAGR %                      | -82.45%                   |
+| Sortino                     | -100.00                   |
+| Sharpe                      | -100.00                   |
+| Calmar                      | -100.00                   |
+| Profit factor               | 0.00                      |
+| Expectancy                  | 0.00                      |
+| Trades per day              | 0.5                       |
+| Avg. daily profit %         | -0.47%                    |
+| Avg. stake amount           | 990 EUR                   |
+| Total trade volume          | 990 EUR                   |
+|                             |                           |
+| Best Pair                   | BCH/EUR 0.00%             |
+| Worst Pair                  | LINK/EUR -0.96%           |
+| Best trade                  | LINK/EUR -0.96%           |
+| Worst trade                 | LINK/EUR -0.96%           |
+| Best day                    | -9.491 EUR                |
+| Worst day                   | -9.491 EUR                |
+| Days win/draw/lose          | 0 / 0 / 1                 |
+| Avg. Duration Winners       | 0:00:00                   |
+| Avg. Duration Loser         | 1 day, 23:05:00           |
+| Rejected Entry signals      | 0                         |
+| Entry/Exit Timeouts         | 0 / 0                     |
+|                             |                           |
+| Min balance                 | 0 EUR                     |
+| Max balance                 | 0 EUR                     |
+| Max % of account underwater | 0.00%                     |
+| Absolute Drawdown (Account) | 0.00%                     |
+| Absolute Drawdown           | 0 EUR                     |
+| Drawdown high               | 0 EUR                     |
+| Drawdown low                | 0 EUR                     |
+| Drawdown Start              | 1970-01-01 00:00:00+00:00 |
+| Drawdown End                | 1970-01-01 00:00:00+00:00 |
+| Market change               | 0.19%                     |
+===========================================================
+
+Backtested 2023-05-13 00:00:00 -> 2023-05-15 00:00:00 | Max open trades : 5
+======================================================================= STRATEGY SUMMARY ======================================================================
+|       Strategy |   Entries |   Avg Profit % |   Cum Profit % |   Tot Profit EUR |   Tot Profit % |    Avg Duration |   Win  Draw  Loss  Win% |     Drawdown |
+|----------------+-----------+----------------+----------------+------------------+----------------+-----------------+-------------------------+--------------|
+| SampleStrategy |         1 |          -0.96 |          -0.96 |           -9.491 |          -0.95 | 1 day, 23:05:00 |     0     0     1     0 | 0 EUR  0.00% |
+===============================================================================================================================================================
+
+For more details, please look at the detail tables above
