@@ -7,3 +7,7 @@ docker compose run --rm freqtrade new-config --config user_data/config.json
 docker compose run --rm freqtrade download-data --pairs BCH/EUR BTC/EUR DAI/EUR DASH/EUR ETC/EUR ETH/EUR LINK/EUR --exchange kraken --days 5 -t 1h
 
 docker compose run --rm freqtrade backtesting --config user_data/config.json --strategy SampleStrategy --timerange $(date -d "-2 days" +"%Y%m%d")-$(date +"%Y%m%d") -i 5m
+
+freqtrade install-ui
+
+freqtrade webserver
